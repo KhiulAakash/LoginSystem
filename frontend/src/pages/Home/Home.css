@@ -1,0 +1,66 @@
+main {
+  width: 100vw;
+}
+main section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+main section .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+}
+main section .content .buttons {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+}
+main section .content .buttons button {
+  height: 30px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main section .content .buttons button:hover {
+  opacity: 0.5;
+}
+main section .content .buttons button:active {
+  opacity: 1;
+}
+main section .content .buttons .btnConnect {
+  background-color: #6895d2;
+}
+main section .content .buttons .btnLearn {
+  background-color: #242424;
+  border: 1px solid #6895d2;
+}
+main .image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .image img {
+  width: 60%;
+}
+@media screen and (max-width:450px){
+    main section{
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        width: 100%;
+    }
+    main .image{
+        height: 100%;
+        width: 100%;
+    }
+    main section .content{
+        width: 100%;
+    }
+}

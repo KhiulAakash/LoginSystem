@@ -1,0 +1,76 @@
+#Admin{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+table{
+    border: 1px solid white;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+th,td{
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: 20px 0;
+}
+#Admin button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+}
+#Admin button:hover{
+    opacity: 0.5;
+}
+#Admin button:active{
+    opacity: 1;
+}
+#Admin .edit{
+    border: 1px solid #6895D2;
+}
+#Admin .delete{
+    background: #D04848;
+}
+
+#AdminEdit{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#AdminEdit form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap:20px;
+    margin: auto;
+}
+#AdminEdit form h1{
+    color: #6895D2;
+}
+#AdminEdit form input{
+    height: 30px;
+    padding:0  5px;
+}
+#AdminEdit form .label{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+#AdminEdit form button{
+    height: 30px;
+    padding: 5px 20px;
+    background-color: #6895D2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#AdminEdit form button:hover{
+    opacity: 0.5;
+}
+#AdminEdit form button:active{
+    opacity: 1;
+}

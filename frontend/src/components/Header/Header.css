@@ -1,0 +1,82 @@
+header .active{
+    color: #D04848;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    background-color: #6895D2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    width: 40%;
+}
+header .logo h1{
+    margin: 0 10%;
+}
+header .menuIcon{
+    display: none;
+}
+header .desktopNav{
+    width: 60%;
+}
+header .mobileNav{
+    display: none;
+}
+header .desktopNav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0 10% 0 0;
+}
+header .desktopNav ul li .loginSignupBtns button{
+    margin: 0 5px;
+}
+header .desktopNav ul li button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header .desktopNav ul li button:hover{
+    opacity: 0.5;
+}
+header .desktopNav ul li button:active{
+    opacity: 1;
+}
+@media screen and (max-width:450px){
+    header .desktopNav{
+        display: none;
+    }
+    header .menuIcon{
+        display: flex;
+        margin: 0 10px;
+        position: relative;
+        z-index: 100;
+    }
+    header .mobileNav{
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 0;
+        background-color: #6895D2;
+        transition: width 1s;
+        box-shadow: -2px 0 15px rgb(41, 41, 41);
+    }
+    header .mobileNav li{
+        list-style: none;
+        margin: 10px;
+    }
+    header .mobileNav.active {
+        width: 60%;
+    }
+    header .mobileNav.active #logout{
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: none;
+    }
+}

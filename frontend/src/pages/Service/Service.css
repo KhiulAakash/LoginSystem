@@ -1,0 +1,40 @@
+#service {
+  height: fit-content;
+  width: 100vw;
+}
+main .section {
+  width: 90%;
+  margin:5% auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+main .section .card {
+  border: 1px solid #6895d2;
+}
+main .section .card .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .section .card .image img {
+  width: 80%;
+}
+main .section .card .content {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+ main .section .card .pp{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:450px) {
+    main .section .card{
+        height: fit-content;
+    }
+    #service{
+      padding: 0;
+    }
+}
